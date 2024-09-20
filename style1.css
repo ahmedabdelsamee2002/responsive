@@ -9,7 +9,8 @@ body {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
   color: hsl(192, 100%, 9%);
-  line-height: 1.6; 
+  line-height: 1.6; /* Better text readability */
+  margin: 0;
 }
 
 /* Typography */
@@ -23,12 +24,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 5rem;
-  flex-wrap: wrap; /* Added for wrapping items on smaller screens */
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
 }
 
 nav button {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   color: hsl(322, 100%, 66%);
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 2rem;
@@ -61,7 +62,7 @@ header {
 .GSFF-btn {
   color: white;
   background: hsl(322, 100%, 66%);
-  padding: 1.4rem 6rem;
+  padding: 1.2rem 4rem;
   font-size: 1.1rem;
   font-weight: 600;
   border: none;
@@ -76,8 +77,8 @@ header {
 
 .intro img {
   margin: 5rem auto;
-  max-width: 100%; /* Ensures the image scales */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
 .count {
@@ -85,7 +86,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Added to prevent overflow */
+  flex-wrap: wrap;
 }
 
 .count img {
@@ -132,7 +133,7 @@ header {
 
 .column__text img {
   max-width: 100%;
-  height: auto; /* Keep image aspect ratio */
+  height: auto;
 }
 
 .first img,
@@ -265,7 +266,7 @@ header {
     padding: 3rem;
   }
 
-.intro img {
+  .intro img {
     margin: 3rem auto;
     width: 90%;
   }
@@ -294,6 +295,7 @@ header {
   .pattern-bottom-desktop {
     display: none;
   }
+
   .pattern-top-mobile,
   .pattern-bottom-mobile {
     display: block;
@@ -341,5 +343,10 @@ header {
     padding: 2rem;
     flex-direction: column;
     align-items: center;
+  }
+
+  .column__text {
+    gap: 2rem;
+    padding: 1.5rem;
   }
 }
